@@ -1,0 +1,90 @@
+body{
+    Background-color:hsl(0, 4%, 15%);
+}
+.bar{
+    display:grid;
+    position:relative;
+    top:0px;
+    width:100%;
+    height:30px;
+    background-color:transparent;
+    margin-top:0px;
+    margin-left:0;
+}
+
+.profile{
+    position:absolute;
+    display:inline-block;
+    right:0px;
+    width:50%;
+    height:30px;
+    background-color:transparent;
+}
+.sign{
+    margin-left:100px;
+    right:20px;
+    background-color:transparent;
+    border:none;
+}
+.sign a{
+    text-decoration: none;
+    color:white;
+}
+.sign:hover{
+    background-color:rgb(150, 115, 115);
+    border-radius:20px;
+}
+.Logo{
+    position:relative;
+    width:50%;
+    height:700px;
+    background-color:gray;
+    margin-top:100px;
+
+}
+.discreption{
+    position:absolute;
+    right:0px;
+    width:45%;
+    height:350px;
+    background-color:gray;
+    top:130px;
+
+}
+.inner{
+    width:100%;
+    height:100%;
+}
+.contact{
+    position:absolute;
+    display:grid;
+    right:0px;
+    width:45%;
+    height:300px;
+    background-color:gray;
+    top:540px;
+}
+.logoImage{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:700px;
+    background-color:rgb(151, 74, 74);
+}
+.carL{
+    width:100%;
+    height:700px;
+}
+
+.contactNumber{
+    width:100%;
+    height:170px;
+    background-color:rgb(238, 3, 3);
+}
+.socialMedia{
+    width:100%;
+    height:170px;
+    background-color:rgb(21, 136, 46);
+
+}
