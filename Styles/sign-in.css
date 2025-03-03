@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(211, 186, 186);
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.signIn{
+    width:300px;
+    height:300px;
+    margin-top:50%;
+    padding-left:50px;
+    background-color:rgb(39, 36, 36);
+    border-radius:20px;
+    color:white;
+    box-shadow: 10px 10px 10px rgb(119, 96, 96);
+}
+.login-value{
+    margin-top:20px;
+    
+}
+.sign-in{
+    background-color:green;
+    border:none;
+    color:white;
+    padding:5px;
+    border-radius:10px;
+}
+.sign-in:hover{
+    background-color:rgb(14, 99, 14);
+}
+.back{
+    position:absolute;
+    margin-top:50px;
+    color:white;
+    text-decoration: none;
+}
