@@ -1,0 +1,78 @@
+body{
+    background-color:black;
+}
+.compName{
+    position:fixed;
+    width:50%;
+    height:100px;
+    background-color:darkblue;
+    margin-bottom:50px;
+}
+.options{
+    display:grid;
+    position:fixed;
+    top:150px;
+    width:30%;
+    height:500px;
+    background-color:white;
+}
+.buttons{
+    font-size: larger;
+}
+.opration-field{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:150px;
+    left:32%;
+    width:40%;
+    height: 700px;
+    background-color:transparent;
+}
+.information{
+    position:fixed;
+    top:150px;
+    left:74%;
+    width:27%;
+    height:600px;
+    background-color:gray;
+}
+.admin-page{
+    position:fixed;
+    right:10px;
+    text-decoration: none;
+    color:green;
+    font-size: larger;
+}
+.admin-page:hover{
+    color:red;  
+}
+.add-form{
+    margin-left:80px;
+}
+.Name{
+    font-size:larger;
+    margin-bottom:40px;
+}
+.add-to-product{
+    width:80px;
+    height:40px;
+    border-radius:20px;
+    border:none;
+    background-color:rgb(18, 247, 18);
+    color:white;
+    font-size:larger;
+}
+.ProductName{
+    border:none;
+    color:white;
+    border-bottom:2px solid white;
+    background-color:transparent;
+}
+.formIdentifier{
+    font-size: 35px;
+    margin-left:10px;
+    color:white;
+    margin-bottom:50px;
+}
