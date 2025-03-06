@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="../styles/sign-in.css">
 </head>
 <body>
-    
+    <div class="home">
+        <a href="homePage.html"><image src="../images/homeLogo.png" class="home-logo"></image></a>
+    </div>
         <form method="sign-in" class="signIn">
-            <label class="login-value" >Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <div class="formIdentifier">Sign In</div>
             <input type="text" placeholder="email" class="username login-value"><br>
-            <label class="login-value">Pasword:</label>
             <input typr="text" placeholder="Password" class="password login-value"><br><br>
-            <a href="#" style="color:rgb(218, 157, 46);text-decoration: none;">forget password</a><br>
+            <div class="forgot"><a href="#" style="color:rgb(218, 157, 46);text-decoration: none;">forget password</a></div><br>
+            <div class="sign-up"><a href="sign-up.html" style="color:rgb(218, 157, 46);text-decoration: none;" >Sign-Up</a></div><br>
             <button class="sign-in login-value" onclick="sign();">Sign-in</button><br><br>
-            <a href="sign-up.html" style="color:rgb(218, 157, 46);text-decoration: none;">Sign-Up</a><br>
-            <a href="homePage.html" class="back">Back To Home</a>
-
+            <div class="logged"></div><br>
         </form>
-    
     <script src="../Scripts/sign-in.js"></script>
 </body>
 </html>
