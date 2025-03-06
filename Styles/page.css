@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-color:hsl(0, 0%, 92%);
 
 }
 .navBar{
@@ -7,40 +7,57 @@ body{
     display:grid;
     align-items: center;
     top:0px;
+    border-radius:30px;
     width:100%;
     height:60px;
-    background-color:gray;
+    background-color:rgb(121, 211, 238);
 }
-.profile{
+.navigation{
     position:absolute;
     display:inline-block;
     right:0px;
     width:33%;
     height:60px;
-    background-color:rgb(199, 22, 22);
+    background-color:transparent;
 }
 .companyName{
     position:absolute;
     left:33%;
     width:34%;
     height:60px;
-    background-color:rgb(16, 94, 40);
+    background-color:transparent;
 }
-.navigation{
+.profile{
+    position:relative;
     width:33%;
     height:60px;
-    background-color:rgb(66, 40, 40);
+    background-color:transparent;
+}
+.profile-picture{
+    position: relative;
+    display:inline-block;
+    background-color:black;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+.user-name{
+    position:absolute;
+    left:70px;
+    top:20px;
 }
 .nav{
+    list-style-type: none;
     margin-top:15px;
     margin-left:20px;
-    width:60px;
+    width:20px;
     padding:6px;
     font-size: large;
     background-color:transparent;
     border:none;
 }
 .nav a{
+    list-style-type: none;
     text-decoration: none;
     color:white;
 
@@ -49,30 +66,55 @@ body{
     background-color:gray;
     border-radius:20px;
 }
-.product-container{
-    position:relative;
-    background-color:gray;
+.container{
     width:100%;
-    margin-top:30px;
     height:auto;
-
 }
 .product{
     display:inline-block;
-    width:20%;
+    margin-top:60px;
+    border-radius:20px;
+    width:400px;
     height:400px;
     margin-left:20px;
-    background-color:blue;
+    background-color:hsl(240, 2%, 84%);
+    overflow: hidden;
 }
 .item-image{
     width:100%;
     height:50%;
     background-color:white;
 }
+.car-image{
+    width:100%;
+    height:100%
+}
+.product-name{
+    font-size:20px;
+    margin-top:5px;
+    margin-left:5px;
+    background-color:orange;
+}
 .sale-discription{
     width:100%;
     height:50%;
-    background-color:rgb(153, 84, 84);
+    background-color:transparent;
+}
+.discription{
+    background-color:cyan;
+    margin-top:10px;
+    width:100%;
+    height:50%;
+    padding:5px;
+}
+.price{
+    height:10%;
+    width:150px;
+    margin-left:24px;
+    margin-top:10px;
+    font-size: larger;
+    background-color:black;
+    color:red;
 }
 .setting{
     width:40px;
@@ -81,6 +123,7 @@ body{
     right:10px;
     bottom:15px;
     border:none;
+    color:black;
     background-color:transparent;
 
 }
@@ -92,14 +135,36 @@ body{
     top:60px;
     right:30px;
     width:300px;
-    height:500px;
+    height:auto;
     background-color:rgb(226, 10, 10);
     border-radius:10px;
     display:grid;
-    align-items: center;
-    opacity:0.5;
+    opacity:0.75;
+    border-radius:10px;
+    overflow: hidden;
+    
+    
 }
+
+
 .me:hover{
     color:white;
     background-color:black;
+}
+.setting-panel button{
+    width:100%;
+    height:40px;
+    border:0.1px solid black;
+    border-left:none;
+    background-color:rgba(124, 122, 122, 0.87);
+    border-right:none;
+    font:larger;
+
+}
+.setting-panel button:hover{
+    background-color:rgba(87, 85, 85, 0.87);
+}
+.setting-panel a button{
+    text-decoration: none;
+    color:white;
 }
