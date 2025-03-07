@@ -60,7 +60,6 @@ body{
     list-style-type: none;
     text-decoration: none;
     color:white;
-
 }
 .nav:hover{
     background-color:gray;
@@ -142,11 +141,7 @@ body{
     opacity:0.75;
     border-radius:10px;
     overflow: hidden;
-    
-    
 }
-
-
 .me:hover{
     color:white;
     background-color:black;
