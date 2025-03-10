@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="../Styles/adminPage.css">
 </head>
 <body>
-    <a href="page.html" class="admin-page">Sales Page</a>
-    <div class="compName"></div>
-    <div class="options">
-        <button class="add-product buttons " onclick="add();">Add Product</button>
-        <button class="modify-product buttons" onclick="modify();">Modify Product</button>
-        <button class="remove-product buttons" onclick="remove();">Remove Prooduct</button>
-        <button class="view-report buttons">View Report</button>
-        <button class="view-report buttons" onclick="clears();">Clear</button>
+    <div class="mode">
+        <div class="state">Off</div>
+        <div class="toggle" onclick="Mode()"></div>
     </div>
-    <div class="opration-field"></div>
+    <a href="page.html" class="admin-page"><button>Sales Page</button></a>
+    <div class="compName">GOH CAR-DEALER</div>
+    <div class="combine-options-operationField">
+        <div class="options">
+            <button class="add-product buttons " onclick="add();">Add Product</button>
+            <button class="modify-product buttons" onclick="modify();">Modify Product</button>
+            <button class="remove-product buttons" onclick="remove();">Remove Prooduct</button>
+            <button class="view-report buttons">View Report</button>
+            <button class="view-report buttons" onclick="logout();">Log-Out</button>
+        </div>
+        <div class="opration-field"></div>
+        <div class="slidShow"></div>
+
+    </div>
     <div class="information"></div>
-    <script src="../Scripts/adminPage.js"></script>
+    <script type="module" src="../Scripts/adminPage.js"></script>
 </body>
 </html>

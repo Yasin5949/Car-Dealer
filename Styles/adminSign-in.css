@@ -1,35 +1,47 @@
 body{
-    background:linear-gradient(rgb(0, 0, 0),rgb(2, 41, 2),rgb(3, 66, 3),rgb(8, 117, 8),green);
-    display:inline-block;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-color:rgb(173, 158, 158);
 
 }
 .signIn{
     position:fixed;
-    top:40%;
+    top:30%;
     left:40%;
     width:300px;
-    height:300px;
+    height:auto;
     padding-left:50px;
     background-color:rgb(39, 36, 36);
     color:white;
 }
 .login-value{
-    margin-top:20px;
-    
+    margin-bottom:40px;
+    width:200px;
+    margin-left:30px;
+    border:none;
+    border-bottom:2px solid white;
+    background-color:transparent;
+    font-size:15px;
+    color:white;
+    padding:0px;
+}
+.formIdentifier{
+    margin-top:30px;
+    margin-left:40px;
+    margin-bottom:40px;
+    font-size: 50px;
 }
 .sign-in{
     background-color:green;
     border:none;
     color:white;
     padding:5px;
+    margin-top:20px;
+
     border-radius:10px;
 }
 .sign-in:hover{
     background-color:rgb(14, 99, 14);
 }
+
 .logged{
     color:green;
 }

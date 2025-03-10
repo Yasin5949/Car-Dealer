@@ -1,0 +1,165 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#333;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+.pictureContainer{
+    overflow: hidden;
+    border-radius:20px;
+    position:fixed;
+    top:20px;
+    width:40%;
+    height:400px;
+    margin-left:30%;
+    background-color:transparent;
+}
+.picture{
+    position:absolute;
+    width:45%;
+    height:190px;
+    background-color:yellow;
+    overflow: hidden;
+}.frontDev{
+    position:absolute;
+    bottom:0px;
+}
+.diveloper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+}
+.diveloper2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+
+}
+.detail{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:55%;
+    height:100%;
+    background-color:transparent;
+}
+.personalInfo{
+    position:absolute;
+    right:0px;
+    width:95%;
+    height:48%;
+    background-color:white;
+    box-shadow: 10px 10px 10px gray;
+}
+.secondDeveloper{
+    position:absolute;
+    bottom:0px;
+    background-color:white;
+}
+.Name{
+    width:100%;
+    height:max-content;
+    padding-left:30px;
+    position:absolute;
+    top:0px;
+    color:black;
+}
+.contactingWay{
+    width:100%;
+    height:40px;
+    position:absolute;
+    bottom:0px;
+}
+.socialMedia{
+    display:inline-block;
+    width:20%;
+    height:50px;
+    margin-left:5px;
+}
+.media{
+    width:40%;
+}
+.media:hover{
+    transform:scale(1.2);
+}
+.container {
+    position:absolute;
+    bottom:100px;
+    margin-top: 60px;
+    width:100%;
+    height:350px;
+    background-color:black;
+}
+
+.slide {
+    width:100%;
+    height:350px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color:gray;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    filter:blur(0px);
+}
+
+.slide .item {
+    transition: transform 0.5s, filter 0.5s;
+    filter: blur(20px);
+}
+
+.slide .item.active {
+    width:30%;
+    height:300px;
+    filter: blur(0);
+}
+
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button button {
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #575757;
+}

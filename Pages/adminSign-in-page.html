@@ -10,12 +10,11 @@
 <body>
     <div class="backBody"></div>
     <form method="sign-in" class="signIn">
-        <label class="login-value" >Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" placeholder="email" class="username login-value"><br>
-        <label class="login-value">Pasword:</label>
+        <div class="formIdentifier">Sign-In</div>
+        <input type="text" placeholder="email" class="email login-value"><br>
         <input typr="text" placeholder="Password" class="password login-value"><br><br>
-        <a href="#" style="color:rgb(218, 157, 46);text-decoration: none;">forget password</a><br>
-        <button class="sign-in login-value" onclick="sign();">Sign-in</button><br><br>
+        <a href="#" style="color:rgb(218, 157, 46);text-decoration: none;margin-left:30px;">forget password</a><br>
+        <button class="sign-in login-value" onclick="logIn();">Sign-in</button><br><br>
         <div class="logged"></div><br>
     </form>
     <script src="../Scripts/adminDashEffect.js"></script>

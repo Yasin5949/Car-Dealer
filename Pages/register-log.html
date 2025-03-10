@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/register-log.css">
+</head>
+<body>
+    <div class="home">
+        <a href="homePage.html" attribute="home"><image src="../Images/homeLogo.png" class="home-logo"></image></a>
+    </div>
+    <div  class="form">
+        <form method="form" class="form toPage"></form>
+            <div class="formIdentifier">Sign Up</div>
+            <input type="text" placeholder="email" class="newEmail login-value"><br>
+            <input typr="text" placeholder="Password" class="newpassword login-value"><br><br>
+            <input typr="text" placeholder=" Confirm Password" class="confirmPassword login-value"><br><br>
+            <button class="sign-in login-value" onclick="register()">Sign-up</button><br>
+        </form>
+        <form method="sign-in" class="form toPage">
+        <div class="formIdentifier">Sign In</div>
+        <input type="text" placeholder="email" class="Email login-value"><br>
+        <input typr="text" placeholder="Password" class="password login-value"><br><br>
+        <div class="forgot"><a href="#" style="color:rgb(218, 157, 46);text-decoration: none;">forget password</a></div><br>
+        <button type="button" class="sign-in login-value" onclick="logIn();">Sign-in</button><br><br>
+        <div class="logged"></div><br>
+    </form>
+    <div class="Effect">
+        
+        <div class="change">
+            <p class="welcome">
+                <h1>WelCome!</h1>
+                Join Us And Explore The World Of Luxury
+            </p>
+            <button type="button" class="Changebtn" onclick="switchTo()">I Have Account</button>
+        </div></div>
+
+</div>
+    <script src="../Data/Users.js"></script>
+    <script src="../Scripts/register-log.js"></script>
+</body>
+</html>

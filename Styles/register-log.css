@@ -1,0 +1,113 @@
+body{
+    background-color:rgb(211, 186, 186);
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+.home-logo{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:50px;
+}
+
+.form{
+    overflow: hidden;
+    position:relative;
+    width:800px;
+    height:500px;
+    margin-top:20%;
+    padding-left:50px;
+    background-color:rgb(39, 36, 36);
+    border-radius:20px;
+    color:white;
+    box-shadow: 10px 10px 10px rgb(119, 96, 96);
+}
+.toPage{
+    position:absolute;
+    right:0px;
+    top:-170px;
+    background-color:transparent;
+    width:300px;
+    box-shadow:none;
+}
+.Effect{
+    position:absolute;
+    width:500px;
+    height:660px;
+    transform:rotatez(20deg);
+    top:-50px;
+    right:-80px;
+    background-color:white;
+    color:black;
+    
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    animation:2s go ease-in;
+}
+.change{
+    font-size:20px;
+    width:300px;
+    height:400px;
+    border-radius:10px;
+    transform:rotatez(-20deg);
+    border:none;
+    color:black;
+    background-color:transparent;
+    transform:rotatez(-20px);
+
+}
+.Changebtn{
+    position:absolute;
+    color:white;
+    background-color:orange;
+    border:none;
+    width:200px;
+    height:30px;
+    border-radius:10px;
+    margin-left:30px;
+    bottom:30px;
+}
+
+.apear{
+    transform:rotatez(-20deg);
+    left:-60px;
+}
+.changed{
+    transform:rotatez(20deg);
+}
+
+.formIdentifier{
+    font-size: 50px;
+    margin-left:50px;
+    margin-top:30px;
+    width:200px;
+}
+.login-value{
+    margin-top:50px;
+    border:none;
+    background-color:transparent;
+    border-bottom:2px solid white;
+    width:250px;
+    color:white;
+    font-size: large;
+    
+}
+.sign-in{
+    background-color:green;
+    border:none;
+    color:white;
+    padding:5px;
+    border-radius:10px;
+}
+.sign-in:hover{
+    background-color:rgb(14, 99, 14);
+}
+.back{
+    position:absolute;
+    margin-top:50px;
+    color:white;
+    text-decoration: none;
+}

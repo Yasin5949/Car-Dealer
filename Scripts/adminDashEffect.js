@@ -1,9 +1,13 @@
-let square=document.querySelector(".backBody");
-let i=0;
-let background='';
-while(i<1000){
-    background+='<div class="square"></div>';
-    i++;
+const eamil=document.querySelector(".email");
+const password=document.querySelector(".password");
+function logIn(){
+    if(email.value==="Yasin" && password.value==="1234"){
+        setTimeout(function(){
+            window.location.href="adminPage.html";
+
+        },10);
+    }
+    else{
+        document.querySelector(".formIdentifier").innerHTML='000';
+    }
 }
-console.log(background);
-square.innerHTML=background;
