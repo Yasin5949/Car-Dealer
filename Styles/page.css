@@ -78,6 +78,7 @@ body{
 
 .display{
     width:23%;
+    transition:1s;
     height:100%;
     background-color:black;
     position:fixed;
@@ -86,9 +87,11 @@ body{
 }
 .displied{
     width:40%;
+    transition:1s;
 }
 .product{
     display:inline-block;
+    transition:1s;
     width:25%;
     height:400px;
     margin:0px;
@@ -112,6 +115,7 @@ body{
 }
 .lookAt{
     position:fixed;
+    transition:1s;
     top:30%;
     left:20%;
     transform:scale(1.5);
