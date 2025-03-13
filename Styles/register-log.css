@@ -57,6 +57,7 @@ body{
     color:black;
     background-color:transparent;
     transform:rotatez(-20px);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 .Changebtn{
@@ -110,4 +111,5 @@ body{
     margin-top:50px;
     color:white;
     text-decoration: none;
+    
 }

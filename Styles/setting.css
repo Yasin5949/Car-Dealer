@@ -1,0 +1,44 @@
+body{
+    background-color:black;
+}
+.backButton{
+    position:absolute;
+    top:20px;
+    left:30px;
+    width:80px;
+    height:60px;
+    font-size: larger;
+    color:white;
+    background-color:transparent;
+    border:none;
+    border-bottom:3px solid rgb(114, 102, 102);
+}
+.backButton:hover{
+    background-color:rgb(32, 32, 32);
+}
+.panels{
+    position:fixed;
+    display:grid;
+    top:100px;
+    left:30px;
+    width:300px;
+    height:70%;
+    background-color:transparent;
+
+}
+.panels button{
+    width:300px;
+    font-size: 30px;
+    color:white;
+    text-align: left;
+    border:none;
+    border-right:3px solid rgb(141, 127, 127);
+    background-color:transparent;
+    transition:0.5s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.panels button:hover{
+    width:330px;
+  
+}

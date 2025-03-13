@@ -66,6 +66,12 @@ function register(){
         document.querySelector(".Effect").classList.add('apear');
         document.querySelector(".change").classList.add('changed');
         passwordConfirm.value='';
+        document.querySelector(".change").innerHTML=`
+        <p class="welcome">
+                <h2 style="color:rgb(11, 224, 11);">Successfully Registerd!</h2>
+            </p>
+            <button type="button" class="Changebtn" onclick="switchTo()">Back To Sign-Up</button>
+        `;
         console.log(users);
     }
     else{

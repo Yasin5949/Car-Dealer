@@ -23,7 +23,7 @@ next.addEventListener('click', function(){
         aboutSecond.classList.remove('currentlly');
         picture.classList.remove('currentOne');
         about.classList.remove('currentOne');
-        progress.classList.add('show');
+        progress.classList.add('showTwo');
         progressTwo.classList.remove('show');
     }
     else{
@@ -31,7 +31,7 @@ next.addEventListener('click', function(){
         aboutSecond.classList.add('currentlly');
         picture.classList.add('currentOne');
         about.classList.add('currentOne');
-        progress.classList.remove('show');
+        progress.classList.remove('showTwo');
         progressTwo.classList.add('show');
 
     }
@@ -55,6 +55,7 @@ prev.addEventListener('click', function(){
         aboutSecond.classList.add('currentlly');
         picture.classList.add('currentOne');
         about.classList.add('currentOne');
+        progress.classList.remove('showTwo');
         progressTwo.classList.add('show');
     }
     else{
@@ -62,6 +63,7 @@ prev.addEventListener('click', function(){
         aboutSecond.classList.remove('currentlly');
         picture.classList.remove('currentOne');
         about.classList.remove('currentOne');
+        progress.classList.add('showTwo');
         progressTwo.classList.remove('show');
 
     }

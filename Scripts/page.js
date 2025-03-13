@@ -1,5 +1,5 @@
 import { productGenerater } from "../Data/ProductHtml.js";
-
+import { Products } from "../Data/products.js";
 let settingForm=document.querySelector(".panel");
 let showSetting;
 function setting(){
@@ -11,7 +11,7 @@ function setting(){
         settingForm.classList.add("setting-panel");
         settingForm.innerHTML=`<a href='#'><button>Catagory</button></a>
                                 <a href='#'><button>Trending</button></a>
-                                <a href='#'><button>Setting</button></a>
+                                <a href='setting.html'><button>Setting</button></a>
                                 <a href='about.html'><button>About</button></a>
                                 <a href='homePage.html'><button>Logout</button></a>
                                 <a href='#'><button>Support</button></a>`;
@@ -58,4 +58,16 @@ document.querySelectorAll(".view").forEach((button)=>{
     }
 );
 });
+document.querySelectorAll('.like').forEach((like)=>{
+    like.addEventListener('click',()=>{
+        let liked=parseInt(like.id);
 
+        Products.forEach((products)=>{
+            if(like.id==products.id){
+                products.like++;
+                like.innerHTML=`
+                ${products.like} Like`;
+            }
+        });
+    });
+});

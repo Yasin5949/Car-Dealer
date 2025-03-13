@@ -1,5 +1,3 @@
-
-
 function move(){
     setInterval(()=>{
         let moving=document.querySelectorAll(".sliders");
@@ -63,8 +61,25 @@ function display(){
    }
     },15000);
 }
-move();
+function images(){
+    let image = document.querySelectorAll('.image');
+    image.forEach(item => item.classList.add('hideImage'));
+    let middleIndex = Math.floor(image.length / 2);
+    image[middleIndex].classList.remove('hideImage');
+
+}
+function imageShow(){
+    setInterval(()=>{
+    let image=document.querySelectorAll('.image');
+    document.querySelector('.imageShow').appendChild(image[0]);
+    images();
+    
+    },600);
+
+}
+imageShow();
 display();
+move();
 updateFirst();
 middle();
 updateActiveClass() ;
