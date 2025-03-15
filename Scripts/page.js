@@ -13,8 +13,8 @@ function setting(){
                                 <a href='#'><button>Trending</button></a>
                                 <a href='setting.html'><button>Setting</button></a>
                                 <a href='about.html'><button>About</button></a>
-                                <a href='homePage.html'><button>Logout</button></a>
-                                <a href='#'><button>Support</button></a>`;
+                                <button onclick="logout();" style="color:white;">Logout</button>
+                                <a href='support.html'><button>Support</button></a>`;
     }
     else{
         showSetting=false;
@@ -22,7 +22,29 @@ function setting(){
         settingForm.innerHTML='';
     }
 }
+function logout(){
+    let users=JSON.parse(localStorage.getItem('users')) || [];
+    user.forEach((users)=>{
+        users.mode=users.mode==='off' ? 'active':'off';
+    });
+    localStorage.setItem('users',JSON.stringify(users));
+    setTimeout(()=>{
+    window.location.href='homePage.html';
+},10);
+}
+function ativeUser(){
+    let username=JSON.parse(localStorage.getItem('users')) || [];
+    username.forEach((user)=>{
+        if(user.mode=="active"){
+            document.querySelector('.user-name').innerHTML=`${user.username}`;
+        }
+    })
+    
+}
 window.setting=setting;
+window.logout=logout;
+window.ativeUser=ativeUser;
+ativeUser();
 let choosed;
 const displaying=document.querySelector('.display');
 document.querySelector(".container").innerHTML=productGenerater;
@@ -60,13 +82,11 @@ document.querySelectorAll(".view").forEach((button)=>{
 });
 document.querySelectorAll('.like').forEach((like)=>{
     like.addEventListener('click',()=>{
-        let liked=parseInt(like.id);
-
         Products.forEach((products)=>{
-            if(like.id==products.id){
-                products.like++;
-                like.innerHTML=`
-                ${products.like} Like`;
+            if(products.id==parseInt(like.id)){
+                products.like+=1;
+                like.innerHTML=`${products.like} Like`;
+                console.log(products.like);
             }
         });
     });

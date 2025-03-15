@@ -146,7 +146,71 @@ function deleting(){
         </div>
     `;
 }
+function slidShow(){
+    setInterval(()=>{
+    let slide=document.querySelectorAll('.slid');
+    document.querySelector('.slidShow').appendChild(slide[0]);
+    console.log('ola');
+    },1500);
+}
+
+
+function message(){
+    document.querySelector('.messagesButton').innerHTML=``;
+    let display=document.querySelector(".information");
+    display.innerHTML=`
+        <div class="messaging">
+                <div class="messages"></div>
+                    <div class="messageArea">
+                        <textarea placeholder="message" id="textMessage"></textarea>
+                        <button onclick="reply()">send</button>
+                        <button class="deleteChat" onclick="deleteChat()">delete chat</button>
+                    </div>
+                </div>
+    `;
+
+}
+function reply(){
+    document.querySelector('.messages').innerHTML=``;
+    let message=document.getElementById('textMessage').value;
+    let messages=JSON.parse(localStorage.getItem('messages')) || [];
+    if(message){
+        messages.push({
+            Message:message,
+            Id:2
+        });
+    }
+    localStorage.setItem('messages',JSON.stringify(messages));
+    let messaging=JSON.parse(localStorage.getItem('messages')) || [];
+    messaging.forEach((messages)=>{
+        console.log(messages);
+        if(messages.Id===1){
+            document.querySelector('.messages').innerHTML+=`
+                <div class="messageContainer">
+                    <div class="texts">${messages.Message}</div>
+                </div>
+        `;}
+        else if(messages.Id===2){
+            document.querySelector('.messages').innerHTML+=`
+                <div class="messageContainerAdmin">
+                    <div class="adminMessage">${messages.Message}</div>
+                </div>
+        `;}
+        document.getElementById('textMessage').value=``;
+
+    });
+}
+let inbox=0;
+function newMessage(){
+    let messages=JSON.parse(localStorage.getItem('messages')) || [];
+}
+slidShow();
 window.add=add;
+window.newMessage=newMessage;
+window.reply=reply;
+window.message=message;
+window.ViewMessage=ViewMessage;
+window.slidShow=slidShow;
 window.deleting=deleting;
 window.searchToRemove=searchToRemove;
 window.remove=remove;

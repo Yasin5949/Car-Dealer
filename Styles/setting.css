@@ -21,13 +21,13 @@ body{
     display:grid;
     top:100px;
     left:30px;
-    width:300px;
+    width:20%;
     height:70%;
     background-color:transparent;
 
 }
 .panels button{
-    width:300px;
+    width:100%;
     font-size: 30px;
     color:white;
     text-align: left;
@@ -39,6 +39,72 @@ body{
 
 }
 .panels button:hover{
-    width:330px;
+    width:110%;
   
 }
+.container{
+    position:fixed;
+    top:0px;
+    right:0px;
+    width:70%;
+    height:100%;
+}
+.editProfile{
+    position:absolute;
+    width:70%;
+    height:90%;
+    left:2%;
+    top:70px;
+}
+.opratiionContainer{
+    position:absolute;
+    top:20px;
+    display:grid;
+    width:30%;
+    height:30%;
+}
+.opratiionContainer button{
+    background-color:rgba(255,255,255,0.2);
+    color:white;
+    border:none;
+    transition:1s;
+}
+.opratiionContainer button:hover{
+    transform:scale(1.1);
+}
+.oprationField{
+    position:absolute;
+    right:0px;
+    width:70%;
+    height:100%;
+}
+.passwordChange{
+    position:grid;
+    align-items: center;
+    width:200px;
+    height:500px;
+    margin-left:50px;
+}
+.passwordChange input{
+    border:none;
+    border-bottom:3px solid rgb(126, 122, 122);
+    background-color:transparent;
+    margin-top:40px;
+    margin-left:20px;
+    color:white;
+
+}
+.passwordChange button{
+    width:150px;
+    height:50px;
+    margin-left:20px;
+    margin-top:40px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    background-color:green;
+}
+.passwordChange button:hover{
+    background-color:rgb(31, 202, 31);
+}
+

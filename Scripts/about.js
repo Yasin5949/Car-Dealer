@@ -93,4 +93,3 @@ updateFirst();
 
 updateActiveClass();
 
-console.log("hello");
