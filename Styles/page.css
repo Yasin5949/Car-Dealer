@@ -1,5 +1,7 @@
 body{
     background-color:hsla(0, 11%, 80%, 0.322);
+    background-color:rgb(63, 60, 60);
+
    
 
 }
@@ -9,13 +11,14 @@ body{
 
 .navBar{
     position:fixed;
+    left:0px;
     display:grid;
     align-items: center;
     top:0px;
-    border-radius:30px;
     width:100%;
     height:60px;
-    background-color:rgb(121, 211, 238);
+    background-color:rgb(14, 13, 13);
+    color:white;
 }
 .navigation{
     position:absolute;
@@ -30,7 +33,6 @@ body{
     left:33%;
     width:34%;
     height:60px;
-    background-color:transparent;
 }
 .profile{
     position:relative;
@@ -70,20 +72,165 @@ body{
     background-color:gray;
     border-radius:20px;
 }
+.modeContainer{
+    position:relative;
+    width:100%;
+    height:200px;
+    background-color:rgb(75, 72, 72);
+    color:white;
+
+}
+.catagoryContainer{
+    width:60%;
+    height:70px;
+    position:absolute;
+    display:grid;
+    text-align: center;
+}
+.modeContainer option{
+    font-size: large;
+}
+.selectContainer{
+    width:30%;
+    height:40px;
+    position:relative;
+    left:10px;
+    top:50%;
+}
+.modeContainer select{
+    left:0px;
+    width:100%;
+    height:100%;
+    color:white;
+    background-color:black;
+    border-radius:10px;
+    padding-left:70px;
+}
+.selectContainer span{
+    position:absolute;
+    left:5px;
+    top:10px;
+}
+.modeContainer .type{
+    left:0px;
+    width:100%;
+    height:100%;
+    color:white;
+    background-color:black;
+    border-radius:10px;
+    padding-left:70px;
+
+}
+.selectContainerTwo{
+    width:30%;
+    height:40px;
+    position:relative;
+    left:40%;
+    top:30%;
+}
+.selectContainerTwo .spanTwo{
+    position:absolute;
+    left:5px;
+    top:10px;
+}
+.searchLabel {
+    position:absolute;
+    transition:0.4s;
+    bottom:10px;
+    left:100px;
+    width:50%;
+    height:40px;
+}
+.searchLabel input{
+    position:absolute;
+    transition:0.4s;
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:20px;
+    background-color:rgb(32, 31, 31);
+    padding-left:60px;
+    color:white;
+    font-size: large;
+}
+
+.searchLabel div{
+    position:absolute;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:100%;
+    color:black;
+    border-right:1px solid white;
+    color:white;
+}
+.searchLabel div:hover{
+    transform:scale(1.1);
+}
+@keyframes searchApear {
+    from{
+        width:0px;
+        right:0px
+    }
+    to{
+        width:100%;
+        right:0px;
+    }
+}
+.ThemeContainer{
+    position:absolute;
+    top:10px;
+    left:65%;
+    width:60px;
+    height:30px;
+    background-color:rgb(174, 180, 180);
+    border-radius:20px;
+    transition:0.6s;
+}
+.ThemeContainer .ThemeToggle{
+    width:20px;
+    height:20px;
+    background-color:rgb(0, 0, 0);
+    border-radius:50%;
+    transition:0.3s;
+    margin-top:5px;
+    margin-left:5px;
+}
 .container{
     width:100%;
     height:auto;
-    margin-top:80px;
+    margin-top:300px;
+    color:white;
 }
 
 .display{
     width:23%;
     transition:1s;
     height:100%;
-    background-color:black;
+    background-color:rgb(75, 74, 74);
     position:fixed;
     right:0px;
     top:60px;
+    border-left:3px solid gray;
+}
+marquee{
+    width:80%;
+    height:100%;
+    margin-left:10%;
+    margin-top:40%;
+}
+marquee .commertialDisplay{
+    width:90%;
+    height:150px;
+    margin-left:5%;
+    margin-top:5%;
+    background-color:gray;
+}
+marquee .commertialDisplay:hover{
+    transform:scale(1.1);
 }
 .displied{
     width:40%;
@@ -95,12 +242,14 @@ body{
     width:25%;
     height:400px;
     margin:0px;
-    background-color:white;
+    background-color:rgb(44, 43, 43);
     overflow: hidden;
-    border:1px solid white;
+    border:none;
+    margin-bottom:30px;
+    margin-left:10px;
 }
 .product button{
-    background-color:gold;
+    background-color:rgb(83, 83, 82);
     border:none;
     color:white;
     width:80px;
@@ -111,10 +260,11 @@ body{
     
 }
 .product button:hover{
-    background-color:rgb(212, 182, 7);
+    transform:scale(1.1);
 }
 .product button .like{
     background-color:black;
+    text-align: center;
 }
 .lookAt{
     position:fixed;
@@ -145,15 +295,15 @@ body{
     font-size:20px;
     margin-top:5px;
     margin-left:5px;
-    background-color:transparent;
 }
 .sale-discription{
     width:100%;
     height:50%;
     background-color:transparent;
+    text-align: center;
+    color:white;
 }
 .discription{
-    background-color:transparent;
     margin-top:10px;
     width:100%;
     height:50%;
@@ -166,21 +316,50 @@ body{
     margin-top:10px;
     font-size: larger;
     background-color:transparent;
-    color:red;
+    color:rgb(15, 207, 15);
 }
 .setting{
-    width:40px;
+    display:grid;
+    width:30px;
+    height:30px;
+    text-align: center;
     font-size: larger;
     position:absolute;
-    right:10px;
-    bottom:15px;
+    right:30px;
+    bottom:10px;
     border:none;
     color:black;
-    background-color:transparent;
 
 }
-.setting:hover{
+.setting .lineOne{
+    width:100%;
+    height:5px;
     background-color:gray;
+}
+.setting .LineOne{
+    transform:translatey(10px) rotatez(45deg) ;
+    transition:0.3s;
+
+}
+.setting .LineTwo{
+    transform:rotatez(-45deg);
+    transition:0.3s;
+}
+.setting .LineThree{
+    opacity:0;
+}
+.setting .lineTwo{
+    width:100%;
+    height:5px;
+    background-color:gray;
+}
+.setting .lineThree{
+    width:100%;
+    height:5px;
+    background-color:gray;
+}
+.setting:hover{
+    transform:scale(1.1);
 }
 .setting-panel{
     position:fixed;
@@ -213,4 +392,27 @@ body{
 .setting-panel a button{
     text-decoration: none;
     color:white;
+}
+.catagory{
+    display:grid;
+    border-radius:10px;
+    overflow: hidden;
+    position:absolute;
+    right:350px;
+    top:80px;
+    width:200px;
+    height:max-content;
+}
+.catagory button{
+    height:40px;
+    color:white;
+    border:0.1px solid black;
+    border-left:none;
+    background-color:rgba(124, 122, 122, 0.87);
+    border-right:none;
+    font-size:larger;
+}
+.catagory button:hover{
+    background-color:rgba(87, 85, 85, 0.87);
+    transform:scale(1.5)
 }

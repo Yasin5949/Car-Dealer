@@ -60,10 +60,12 @@ function clears(){
 }
 function Mode(){
     let state=document.querySelector(".state");
+    let compName=document.querySelector(".compName");
     let toggle=document.querySelector(".toggle");
     if(!state.classList.contains('On') && !toggle.classList.contains('toggled')){
     state.classList.add("On");
     state.innerHTML='On';
+    compName.style.color='white';
     toggle.classList.add("toggled");
     document.querySelector("body").classList.add('check');
     document.querySelector('.information').classList.remove('other');
@@ -71,6 +73,7 @@ function Mode(){
     else{
         state.classList.remove("On");
         state.innerHTML="Off";
+        compName.style.color='black';
         toggle.classList.remove("toggled");
     document.querySelector("body").classList.remove('check');
 
@@ -150,7 +153,6 @@ function slidShow(){
     setInterval(()=>{
     let slide=document.querySelectorAll('.slid');
     document.querySelector('.slidShow').appendChild(slide[0]);
-    console.log('ola');
     },1500);
 }
 
@@ -168,9 +170,9 @@ function message(){
                     </div>
                 </div>
     `;
-
+reply();
 }
-function reply(){
+function addingMessage(){
     document.querySelector('.messages').innerHTML=``;
     let message=document.getElementById('textMessage').value;
     let messages=JSON.parse(localStorage.getItem('messages')) || [];
@@ -181,6 +183,9 @@ function reply(){
         });
     }
     localStorage.setItem('messages',JSON.stringify(messages));
+}
+function reply(){
+    
     let messaging=JSON.parse(localStorage.getItem('messages')) || [];
     messaging.forEach((messages)=>{
         console.log(messages);
@@ -206,10 +211,10 @@ function newMessage(){
 }
 slidShow();
 window.add=add;
+window.addingMessage=addingMessage;
 window.newMessage=newMessage;
 window.reply=reply;
 window.message=message;
-window.ViewMessage=ViewMessage;
 window.slidShow=slidShow;
 window.deleting=deleting;
 window.searchToRemove=searchToRemove;

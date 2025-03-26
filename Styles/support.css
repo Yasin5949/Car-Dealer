@@ -29,6 +29,7 @@ a button:hover{
     font-size: larger;
     background-color:rgb(110, 103, 103,0.1);
     color:white;
+    transition:0.5s;
 }
 .container button:hover{
     width:105%;
@@ -60,6 +61,7 @@ a button:hover{
 .messages{
     scroll-behavior: smooth;
     overflow: scroll;
+    overflow-x:hidden ;
     width:100%;
     height:90%;
     background-color:rgba(71, 62, 62, 0.315);

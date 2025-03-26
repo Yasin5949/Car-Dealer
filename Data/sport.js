@@ -1,8 +1,9 @@
 import { Products } from "./products.js";
-export let productGenerater='';
+export let Sports='';
 Products.forEach((Products)=>{
-    productGenerater+=`
-    <div class="product" ">
+    if(Products.Catagory==="Sport"){
+        Sports+=`
+        <div class="product" ">
             
             <div class="item-image">
                 <image src="${Products.image}" class="car-image"></image>
@@ -10,21 +11,15 @@ Products.forEach((Products)=>{
             <div class="sale-discription">
                 <div class="product-name">
                     ${Products.productName}
-                    <button class="like" id="${Products.id}">${Products.like} Like</button>
+                    <button class="like" style="background-color:red;margin-top:0px;" id="${Products.id}">${Products.like} Like</button>
                 </div>
                 <P class="discription">
-                ${Products.discription}
                 </P>
                 <div class="price">$${Products.price}
                 <button class="view" data-product-id="${Products.id}">view detail</button>
                 </div>
-                
-
             </div>
-        </div>`;
-        
-        
-
+        </div>
+        `;
+    }
 });
-
-

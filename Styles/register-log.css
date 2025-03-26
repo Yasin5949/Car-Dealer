@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(211, 186, 186);
+    background-color:rgb(12, 12, 12);
     display:grid;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,6 @@ body{
     background-color:rgb(39, 36, 36);
     border-radius:20px;
     color:white;
-    box-shadow: 10px 10px 10px rgb(119, 96, 96);
 }
 .toPage{
     position:absolute;
@@ -41,11 +40,9 @@ body{
     right:-80px;
     background-color:white;
     color:black;
-    
     display:grid;
     align-items: center;
     justify-content: center;
-    animation:2s go ease-in;
 }
 .change{
     font-size:20px;
@@ -86,6 +83,14 @@ body{
     margin-top:30px;
     width:200px;
 }
+.form label{
+    width:250px;
+    height:30px;
+}
+.form label legend{
+    position:absolute;
+    transform:translatey(30px);
+}
 .login-value{
     margin-top:50px;
     border:none;
@@ -96,6 +101,7 @@ body{
     font-size: large;
     
 }
+
 .sign-in{
     background-color:green;
     border:none;

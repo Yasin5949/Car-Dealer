@@ -12,16 +12,57 @@
             <image src="../Images/pagani Huayra codalunga.jpg" class="profile-picture" alt="profile"></image>
             <div class="user-name">Yasin</div>
         </div>
-        <div class="companyName"></div>
-        <div class="display"></div>
-
-        <div class="navigation">
-            <button class="setting" onclick="setting()">...</button>  
+        <div class="companyName">
+            
         </div>
+        <div class="modeContainer">
+            <div class="catagoryContainer"></div>
+            <div class="selectContainer">
+                <select class="sortBy">
+                    <option value="ALL"> ALL</option>
+                    <option value="year">Year</option>
+                    <option value="cost">cost</option>
+                    <option value="favorite">Favorite</option>
+                </select>
+                <span>Filter By:</span>
+            </div>
+            <div class="selectContainerTwo">
+                <select class="type" >
+                    <option value="ALL">ALL</option>
+                    <option value="sport">Sport</option>
+                    <option value="jeep">Jeep</option>
+                    <option value="truck">Truck</option>
+                </select>
+                <span class="spanTwo">Catagory:</span>
+            </div>
+            <label class="searchLabel">
+                <input type="text" class="search">
+                <div class="searchSign" onclick="search();">Search</div>
+            </label>
+            <div class="ThemeContainer" onclick="Theme();">
+                <div class="ThemeToggle" ></div>
+            </div>
+        </div>
+        <div class="display">
+            <marquee behavior="scroll" direction="down" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                <div class="commertialDisplay"></div>
+                <div class="commertialDisplay"></div>
+                <div class="commertialDisplay"></div>
+                <div class="commertialDisplay"></div>
+                <div class="commertialDisplay"></div>
+            </marquee>
+        </div>
+        <div class="navigation">
+            <div class="setting" onclick="setting()">
+                <div class="lineOne "></div>
+                <div class="lineTwo "></div>
+                <div class="lineThree "></div>
+            </div>  
+        </div>
+        <div class="catagory"></div>
     </div>
         <div class="container"></div>
         <div class="panel"></div>
-    
     
     <script type="module" src="../Scripts/page.js"></script>
 </body>

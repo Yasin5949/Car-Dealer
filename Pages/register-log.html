@@ -13,15 +13,30 @@
     <div  class="form">
         <form method="form" class="form toPage"></form>
             <div class="formIdentifier">Sign Up</div>
-            <input type="text" placeholder="email" class="newEmail login-value"><br>
-            <input typr="text" placeholder="Password" class="newpassword login-value"><br><br>
-            <input typr="text" placeholder=" Confirm Password" class="confirmPassword login-value"><br><br>
+            <label>
+                <legend>Email</legend>
+                <input type="text"  class="newEmail login-value"><br>
+            </label>
+            <label>
+                <legend>Password</legend>
+                <input type="password"  class="newpassword login-value"><br><br>
+            </label>
+            <label>
+                <legend>Confirm Password</legend>
+            <input type="password"  class="confirmPassword login-value"><br><br>
+            </label>
             <button class="sign-in login-value" onclick="register()">Sign-up</button><br>
         </form>
         <form method="sign-in" class="form toPage">
         <div class="formIdentifier">Sign In</div>
-        <input type="text" placeholder="email" class="Email login-value"><br>
-        <input typr="text" placeholder="Password" class="password login-value"><br><br>
+        <label>
+            <legend>Email</legend>
+            <input type="text" class="Email login-value"><br>
+        </label>
+        <label>
+            <legend>Password</legend>
+            <input type="password" class="password login-value"><br><br>
+        </label> 
         <div class="forgot"><a href="#" style="color:rgb(218, 157, 46);text-decoration: none;">forget password</a></div><br>
         <button type="button" class="sign-in login-value" onclick="logIn();">Sign-in</button><br><br>
         <div class="logged"></div><br>
@@ -37,6 +52,8 @@
         </div></div>
 
 </div>
+<marquee style="color:white;font-size:30px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;position:fixed;bottom:20px;">Devloped by Yasin</marquee>
+
     <script src="../Data/Users.js"></script>
     <script src="../Scripts/register-log.js"></script>
 </body>

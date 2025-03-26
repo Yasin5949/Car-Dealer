@@ -1,7 +1,5 @@
 
-
-function sendMessage(){
-    document.querySelector('.messages').innerHTML=``;
+function addMessage(){
     let message=document.getElementById('textMessage').value;
     let messages=JSON.parse(localStorage.getItem('messages')) || [];
     if(message){
@@ -10,7 +8,11 @@ function sendMessage(){
             Id:1
         });
     }
+    console.log(messages);
     localStorage.setItem('messages',JSON.stringify(messages));
+
+}
+function sendMessage(){
     let messaging=JSON.parse(localStorage.getItem('messages')) || [];
     messaging.forEach((messages)=>{
         console.log(messages);
@@ -37,11 +39,13 @@ function chat(){
             </div>
             <div class="messageArea">
                 <textarea placeholder="message" id="textMessage"></textarea>
-                <button onclick="sendMessage()">send</button>
+                <button onclick="addMessage()">send</button>
                 <button class="deleteChat" onclick="deleteChat()">delete chat</button>
             </div>
         </div>
     `;
+sendMessage();
+
 }
 function deleteChat(){
     localStorage.clear();    
@@ -95,4 +99,4 @@ function mail(){
         </div>
     `;
 
-}
+};
